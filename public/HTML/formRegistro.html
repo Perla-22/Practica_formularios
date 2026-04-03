@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Validacion</title>
+    <link rel="stylesheet" href="/css/formStyles.css" type="text/css" />    
+</head>
+<body>
+
+    <div class="container">
+        
+        <h2>Formulario de registro</h2>
+        
+        <form id="miFormulario" novalidate>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" 
+                   pattern="[a-zA-Z\s]{3,50}" 
+                   placeholder="Ej. Juan López" required autofocus>
+            <span class="mensaje" id="error-nombre"></span>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" 
+                   pattern="^[a-zA-Z0-9]{6,13}$" 
+                   placeholder="Mínimo 6 caracteres" required>
+            <span class="mensaje" id="error-contrasena"></span>
+
+            <label for="concontrasena">Confirmación contraseña:</label>
+            <input type="password" id="concontrasena" name="concontrasena" 
+                   pattern="^[a-zA-Z0-9]{6,13}$" 
+                   placeholder="Repite tu contraseña" required>
+            <span class="mensaje" id="error-concontrasena"></span>
+
+            <label for="preguntarc">Pregunta recuperación cuenta:</label>
+            <input type="text" id="preguntarc" name="preguntarc" 
+                   placeholder="Ej. Nombre de mi primera mascota" required>
+            <span class="mensaje" id="error-preguntarc"></span>
+
+            <label for="respuestarc">Respuesta recuperación cuenta:</label>
+            <input type="text" id="respuestarc" name="respuestarc" 
+                   placeholder="Tu respuesta secreta" required>
+            <span class="mensaje" id="error-respuestarc"></span>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="Ej. nombre@correo.com" required>
+            <span class="mensaje" id="error-correo"></span>
+
+            <div class="btnContainer">            
+                <button class="submit" type="submit">Enviar</button>
+                <button class="reset" type="reset">Limpiar</button>
+            </div>
+            
+            <div class="links">
+                <a href="/">Ya tengo una cuenta. Iniciar sesión</a>
+            </div>
+
+        </form>
+
+        <pre id="resultado"></pre>
+
+    </div> <script src="/js/validateFormR.js"></script>
+
+</body>
+</html>
