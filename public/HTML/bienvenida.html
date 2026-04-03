@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="/css/bienvenida.css">
+</head>
+<body>
+    <div class="welcome-card">
+        <div class="avatar">😃</div>
+        <h1>¡Hola, <span id="user-name">Usuario</span>!</h1>
+        <p>Es un placer tenerte de vuelta en nuestra plataforma.</p>
+        <div class="actions">
+            <a href="/" class="btn btn-primary">Cerrar Sesión</a>
+        </div>
+    </div>
+
+    <script>
+        const pathSegments = window.location.pathname.split('/');
+        const name = pathSegments[pathSegments.length - 1];
+        
+        if (name && !name.includes(".html") && name !== "bienvenida") {
+            document.getElementById('user-name').textContent = decodeURIComponent(name);
+        } else {
+            // Nombre por defecto
+            document.getElementById('user-name').textContent = "Alondra";
+        }
+    </script>
+</body>
+</html>

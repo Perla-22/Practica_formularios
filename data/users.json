@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Alberto",
+    "contrasena": "$2b$12$wI2QdKjad2hRzpquXMfW.OseOiOLCbrNqgRCthq3uPAnsDoxz49RK",
+    "preguntarc": "Color favorito",
+    "respuestarc": "$2b$12$v4yDd/BWbp5KlcKLD0L5HO5CWjPk3bRkPAzEVtgXW/gSB3ZCeO9Nq",
+    "correo": "alberto@gmail.com",
+    "fecha": "2026-04-03T05:04:14.088Z"
+  },
+  {
+    "nombre": "Emma",
+    "contrasena": "$2b$12$lZtjhDD6TnY5ln1YapLhyOXLflY0xMRf.MNMHoZfIrNYkmTuXORbK",
+    "preguntarc": "Comida favorita",
+    "respuestarc": "$2b$12$/j0p3oPWiKbM.y3BUpJ3TebB8TIq.G2oeAHWh1698yMdvb7cV6twG",
+    "correo": "emma@gmail.com",
+    "fecha": "2026-04-03T05:05:56.077Z"
+  },
+  {
+    "nombre": "Joel",
+    "contrasena": "$2b$12$VWch6Cf5FnOtnW31eRH0MuS1ei0z2JGu/T6/X.YguGLmb/xvP3dMa",
+    "preguntarc": "Nombre de mi mascota",
+    "respuestarc": "$2b$12$YeUKpDBEfa8n1X4zVUst9OMTMI9wo1AW7685PHazTT2lEk1dvq3Eq",
+    "correo": "Joel@gmail.com",
+    "fecha": "2026-04-03T05:07:08.780Z"
+  }
+]
